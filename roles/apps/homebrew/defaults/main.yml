@@ -1,0 +1,12 @@
+---
+homebrew_repo: https://github.com/Homebrew/brew
+
+homebrew_prefix: /opt/homebrew
+homebrew_install_path: "{{ homebrew_prefix }}"
+homebrew_brew_bin_path: "{{ homebrew_prefix }}/bin"
+
+homebrew_brewfile_dir: "{{ role_path }}/files"
+
+homebrew_upgrade_all_packages: false
+
+homebrew_clear_cache: false

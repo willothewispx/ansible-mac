@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  connection: local
+
+  pre_tasks:
+
+  roles:
+    - role: apps/homebrew
+      tags: [homebrew]
+    - role: apps/mas
+      tags: [mas]

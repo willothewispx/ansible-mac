@@ -1,0 +1,94 @@
+# Brewfile
+
+brew "mas"
+# brew "ansible"
+# brew "ansible-lint"
+# brew "eza"
+# brew "ffmpeg"
+# brew "fzf"
+# brew "git"
+# brew "go"
+# brew "node"
+# brew "nvm"
+# brew "nvim"
+# brew "pnpm"
+# brew "python"
+# brew "ripgrep"
+# brew "stow"
+# brew "tmux"
+# brew "wget"
+# brew "yamllint"
+# brew "yarn"
+# brew "youtube-dl"
+# brew "zoxide"
+
+
+#############
+### Taps  ###
+#############
+
+# tap "homebrew/cask-fonts"
+
+
+#############
+### Casks ###
+#############
+
+# code
+# cask "visual-studio-code"
+
+# terminal
+# cask "kitty"
+
+# browser
+# cask "brave-browser"
+# cask "google-chrome"
+# cask "firefox"
+
+# password manager
+cask "1password"
+# cask "keeweb"
+
+# video
+# cask "vlc"
+
+# clipboard manager
+# cask "maccy"
+
+# calendar
+# cask "fantastical"
+
+# utility
+# cask "hiddenbar"
+# cask "appcleaner"
+
+# docker
+# cask "docker"
+
+# window
+# cask "alt-tab"
+
+# vpn
+# cask "mullvadvpn"
+
+# bookmark
+# cask "raindropio"
+
+# file
+# cask "dropzone"
+# cask "cryptomator"
+
+# pdf
+# cask "pdf-expert"
+
+# torrent
+# cask "transmission"
+
+# fonts
+# cask "font-fira-code-nerd-font"
+
+# api
+# cask "postman"
+
+# notes
+# cask "obsidian"

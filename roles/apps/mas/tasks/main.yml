@@ -1,0 +1,38 @@
+---
+- name: Ensure MAS is installed.
+  homebrew:
+    name: mas
+    state: present
+
+- name: List installed MAS apps.
+  command: mas list
+  register: mas_list
+  check_mode: false
+  changed_when: false
+
+- name: Uninstall Divvy
+  community.general.mas:
+    id: 409201541
+    state: absent
+  become: true # Uninstallation requires root permissions
+
+- name: Ensure unwanted MAS apps are uninstalled.
+  community.general.mas:
+    id: "{{ item.id | default(item) }}"
+    state: absent
+  with_items: "{{ mas_uninstalled_apps }}"
+  when: (item.id | default(item) | string) in mas_list.stdout
+  become: true
+
+- name: Ensure configured MAS apps are installed.
+  community.general.mas:
+    id: "{{ item.id | default(item) }}"
+    state: present
+    upgrade_all: "{{ mas_upgrade_all_apps | bool }}"
+  with_items: "{{ mas_installed_apps }}"
+  when: (item.id | default(item) | string) not in mas_list.stdout
+
+- name: Upgrade all apps (if configured).
+  community.general.mas:
+    upgrade_all: true
+    when: mas_upgrade_all_apps
