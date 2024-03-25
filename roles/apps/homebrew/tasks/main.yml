@@ -1,8 +1,8 @@
 ---
 - name: Determine Homebrew ownership variables
   set_fact:
-    homebrew_user: '{{ homebrew_user | default(ansible_user_id) }}'
-    homebrew_group: '{{ homebrew_group | default(ansible_user_gid) }}'
+    homebrew_user: "{{ homebrew_user | default(ansible_user_id) }}"
+    homebrew_group: "{{ homebrew_group | default(ansible_user_gid) }}"
 
 # Homebrew setup prerequisites.
 - name: Ensure Homebrew parent directory has correct permissions.
@@ -113,5 +113,5 @@
       command: "{{ homebrew_brew_bin_path }}/brew bundle chdir={{ homebrew_brewfile_dir }}"
       when: homebrew_brewfile.stat.exists
 
-- name: Temporarily add homebrew to PATH
-  shell: eval "$({{ homebrew_brew_bin_path }}/brew shellenv)"
+    - name: Temporarily add homebrew to PATH
+      shell: eval "$({{ homebrew_brew_bin_path }}/brew shellenv)"
