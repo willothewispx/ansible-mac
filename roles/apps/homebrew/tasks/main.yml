@@ -23,15 +23,15 @@
   become: true
 
 # Clone Homebrew.
-# - name: Ensure Homebrew is installed.
-#   git:
-#     repo: "{{ homebrew_repo }}"
-#     version: master
-#     dest: "{{ homebrew_install_path }}"
-#     update: false
-#     depth: 1
-#   become: true
-#   become_user: "{{ homebrew_user }}"
+- name: Ensure Homebrew is installed.
+  git:
+    repo: "{{ homebrew_repo }}"
+    version: master
+    dest: "{{ homebrew_install_path }}"
+    update: false
+    depth: 1
+  become: true
+  become_user: "{{ homebrew_user }}"
 
 # Adjust Homebrew permissions.
 - name: Ensure proper permissions and ownership on homebrew_brew_bin_path dirs.
