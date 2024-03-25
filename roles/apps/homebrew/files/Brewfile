@@ -1,6 +1,7 @@
 # Brewfile
 
 brew "mas"
+brew "dockutil"
 # brew "ansible"
 # brew "ansible-lint"
 # brew "eza"

@@ -6,6 +6,14 @@
 
   roles:
     - role: apps/homebrew
-      tags: [homebrew]
+      tags:
+        - homebrew
+        - apps
     - role: apps/mas
-      tags: [mas]
+      tags:
+        - mas
+        - apps
+    - role: apps/dock
+      tags:
+        - dock
+        - apps

@@ -1,0 +1,23 @@
+---
+dockitems_remove:
+- Launchpad
+- Safari
+- Messages
+- Mail
+- Maps
+- Photos
+- FaceTime
+- Calendar
+- Contacts
+- Notes
+- TV
+- Podcasts
+- 'App Store'
+
+dockitems_persist:
+- name: "Canary Mail"
+  path: "/Applications/Canary Mail.app/"
+  pos: 1
+- name: "Reminders"
+  path: "/Applications/Reminders.app/"
+  pos: 2
