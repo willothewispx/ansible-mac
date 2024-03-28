@@ -101,6 +101,18 @@
         "options": {
           "full_name": "1password"
         }
+      },
+      "visual-studio-code": {
+        "version": "1.87.2",
+        "options": {
+          "full_name": "visual-studio-code"
+        }
+      },
+      "brave-browser": {
+        "version": "1.64.113.0",
+        "options": {
+          "full_name": "brave-browser"
+        }
       }
     }
   },
@@ -112,7 +124,7 @@
         "Homebrew/homebrew-core": "api",
         "CLT": "15.3.0.0.1.1708646388",
         "Xcode": "15.1",
-        "macOS": "14.3.1"
+        "macOS": "14.3"
       }
     }
   }

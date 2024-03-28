@@ -42,7 +42,7 @@ cask "visual-studio-code"
 # cask "kitty"
 
 # browser
-# cask "brave-browser"
+cask "brave-browser"
 # cask "google-chrome"
 # cask "firefox"
 

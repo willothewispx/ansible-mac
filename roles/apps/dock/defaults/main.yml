@@ -13,6 +13,12 @@ dockitems_remove:
 - TV
 - Podcasts
 - 'App Store'
+- Freeform
+- Music
+- Keynote
+- Numbers
+- Pages
+- System Settings
 
 dockitems_persist:
 - name: "Canary Mail"
@@ -21,3 +27,12 @@ dockitems_persist:
 - name: "Reminders"
   path: "/Applications/Reminders.app/"
   pos: 2
+- name: "Brave Browser"
+  path: "/Applications/Brave Browser.app/"
+  pos: 4
+- name: "Visual Studio Code"
+  path: "/Applications/Visual Studio Code.app/"
+  pos: 5
+- name: "1Password"
+  path: "/Applications/1Password.app/"
+  pos: 7

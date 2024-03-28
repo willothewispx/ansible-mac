@@ -1,6 +1,8 @@
 ---
 - hosts: localhost
   connection: local
+  vars_files:
+    - vault.yml
 
   pre_tasks:
 
@@ -17,3 +19,9 @@
       tags:
         - dock
         - apps
+    - role: git
+      tags:
+        - git
+    - role: ssh
+      tags:
+        - ssh

@@ -13,3 +13,13 @@ export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
 python3 -m pip install --upgrade pip
 python3 -m pip install --user ansible
 ````
+
+#### 3. Clone the repository
+
+#### 4. Place vault file and password file at the root directory
+- vault.yml
+- .vault_pass
+
+## MacOs Settings
+- System Settings > Trackpad > Active "Tap to click"
+- System Settings > Trackpad > Deactivate "Natural scrolling"
