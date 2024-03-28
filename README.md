@@ -3,7 +3,13 @@ ansible playbook for provisioning a mac
 
 ## Steps
 
-### 1. Install ansible
+#### 1. export $PATH
 ```
+export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
+````
+
+#### 2. install ansible
+```
+python3 -m pip install --upgrade pip
 python3 -m pip install --user ansible
 ````
