@@ -20,6 +20,11 @@ python3 -m pip install --user ansible
 - vault.yml
 - .vault_pass
 
+#### 5. Install ansible requirements
+```
+ansible-galaxy install -r requirements.yml
+```
+
 ## MacOs Settings
 - System Settings > Trackpad > Active "Tap to click"
 - System Settings > Trackpad > Deactivate "Natural scrolling"
