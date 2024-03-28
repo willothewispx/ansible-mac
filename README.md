@@ -25,6 +25,11 @@ python3 -m pip install --user ansible
 ansible-galaxy install -r requirements.yml
 ```
 
+#### Change git remote url
+```
+git remote set-url origin git@github.com:willothewispx/ansible-mac.git
+```
+
 ## MacOs Settings
 - System Settings > Trackpad > Active "Tap to click"
 - System Settings > Trackpad > Deactivate "Natural scrolling"
