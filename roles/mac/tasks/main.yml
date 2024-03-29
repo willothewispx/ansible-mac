@@ -7,3 +7,15 @@
   
 - name: enable vscodium key repeat
   shell: defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false
+
+- name: Ensure ~/Library/LaunchAgents directory exists
+  file:
+    path: ~/Library/LaunchAgents
+    state: directory
+    mode: '0700'
+
+- name: remap funcion keys to adjust keyboard brightness with F4 and F5
+  ansible.builtin.template:
+    src: files/com.local.KeyRemapping.plist
+    dest: ~/Library/LaunchAgents/com.local.KeyRemapping.plist
+    mode: '0600'

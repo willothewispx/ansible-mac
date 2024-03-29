@@ -53,5 +53,12 @@ git remote set-url origin git@github.com:willothewispx/ansible-mac.git
 - System Preferences > Keyboard > Adjust Delay Until Repeat > Short
 - System Preferences > Keyboard > Keyboard Shortcuts > Modifier Keys > Remap
 
+## Misc
+- Search available nerd fonts 
+```
+brew search '/font-.*-nerd-font/'
+```
+
+
 ## ToDos
 - Add ansible lint action to github

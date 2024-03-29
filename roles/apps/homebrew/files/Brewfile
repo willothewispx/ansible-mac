@@ -6,15 +6,16 @@ brew "ansible"
 # brew "ansible-lint"
 # brew "eza"
 # brew "ffmpeg"
-# brew "fzf"
+brew "fzf"
 brew "git"
 # brew "go"
 # brew "node"
 # brew "nvm"
-# brew "nvim"
+brew "nvim"
 # brew "pnpm"
 # brew "python"
 # brew "ripgrep"
+brew "starship"
 brew "stow"
 # brew "tmux"
 # brew "wget"
@@ -28,7 +29,7 @@ brew "stow"
 ### Taps  ###
 #############
 
-# tap "homebrew/cask-fonts"
+tap "homebrew/cask-fonts"
 
 
 #############
@@ -86,7 +87,8 @@ cask "pdf-expert"
 # cask "transmission"
 
 # fonts
-# cask "font-fira-code-nerd-font"
+cask "font-monaspace"
+cask "font-symbols-only-nerd-font"
 
 # api
 # cask "postman"

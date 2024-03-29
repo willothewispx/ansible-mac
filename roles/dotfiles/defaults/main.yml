@@ -1,2 +1,3 @@
 dotfiles:
-- {name: zsh, path: ~/dotfiles/zsh}
+- zsh
+- kitty
