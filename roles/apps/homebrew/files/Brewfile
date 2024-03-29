@@ -2,12 +2,12 @@
 
 brew "mas"
 brew "dockutil"
-# brew "ansible"
+brew "ansible"
 # brew "ansible-lint"
 # brew "eza"
 # brew "ffmpeg"
 # brew "fzf"
-# brew "git"
+brew "git"
 # brew "go"
 # brew "node"
 # brew "nvm"
@@ -15,7 +15,7 @@ brew "dockutil"
 # brew "pnpm"
 # brew "python"
 # brew "ripgrep"
-# brew "stow"
+brew "stow"
 # brew "tmux"
 # brew "wget"
 # brew "yamllint"
@@ -39,7 +39,7 @@ brew "dockutil"
 cask "visual-studio-code"
 
 # terminal
-# cask "kitty"
+cask "kitty"
 
 # browser
 cask "brave-browser"
@@ -48,20 +48,20 @@ cask "brave-browser"
 
 # password manager
 cask "1password"
-# cask "keeweb"
+cask "keeweb"
 
 # video
 # cask "vlc"
 
 # clipboard manager
-# cask "maccy"
+cask "maccy"
 
 # calendar
-# cask "fantastical"
+cask "fantastical"
 
 # utility
 # cask "hiddenbar"
-# cask "appcleaner"
+cask "appcleaner"
 
 # docker
 # cask "docker"
@@ -80,7 +80,7 @@ cask "1password"
 # cask "cryptomator"
 
 # pdf
-# cask "pdf-expert"
+cask "pdf-expert"
 
 # torrent
 # cask "transmission"
@@ -92,4 +92,4 @@ cask "1password"
 # cask "postman"
 
 # notes
-# cask "obsidian"
+cask "obsidian"

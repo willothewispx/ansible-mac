@@ -1,0 +1,9 @@
+---
+- name: enable global key repeat
+  shell: defaults write -g ApplePressAndHoldEnabled -bool false
+
+- name: enable VS Code key repeat
+  shell: defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+  
+- name: enable vscodium key repeat
+  shell: defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false

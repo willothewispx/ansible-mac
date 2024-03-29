@@ -1,0 +1,11 @@
+---
+- name: Clone dotfiles repository
+  git:
+    repo: "git@github.com:willothewispx/dotfiles.git"
+    version: main
+    dest: "~/dotfiles"
+    update: false
+
+- name: Apply dotfiles
+  ansible.builtin.include_tasks: apply.yml
+  loop: "{{ dotfiles }}"

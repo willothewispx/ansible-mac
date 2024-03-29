@@ -8,5 +8,6 @@ mas_uninstalled_apps:
 
 mas_installed_apps:
   - { id: 1236045954, name: "Canary Mail" }
+  - { id: 1471867429, name: "OTP Auth" }
 
 mas_upgrade_all_apps: false

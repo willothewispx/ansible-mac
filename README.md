@@ -30,6 +30,28 @@ ansible-galaxy install -r requirements.yml
 git remote set-url origin git@github.com:willothewispx/ansible-mac.git
 ```
 
+## Apps
+
+#### Canary Mail
+- Import gpg keys
+- Add user in keys details to prompt the passphrase input field
+- File > Re-Index on loading spinner
+
 ## MacOs Settings
 - System Settings > Trackpad > Active "Tap to click"
 - System Settings > Trackpad > Deactivate "Natural scrolling"
+- System Settings > iCloud > iCloud Drive > Sync Desktop and Documents Folder
+
+- System Settings > Desktop & Dock > Reduce dock size
+- System Settings > Desktop & Dock > Show suggested and recent apps in Dock
+- System Settings > Desktop & Dock > Minimize windows into application icon
+- System Settings > Desktop & Dock > Hot corners > disable
+
+- System Settings > Displays > Night Shift
+
+- System Preferences > Keyboard > Adjsut Key Repeat > Fast
+- System Preferences > Keyboard > Adjust Delay Until Repeat > Short
+- System Preferences > Keyboard > Keyboard Shortcuts > Modifier Keys > Remap
+
+## ToDos
+- Add ansible lint action to github

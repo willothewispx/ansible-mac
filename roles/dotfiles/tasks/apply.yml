@@ -1,0 +1,8 @@
+- name: Apply dotfiles
+  vars:
+    user_home: "{{ lookup('env', 'HOME') }}"
+  environment:
+    STOW_DIR: "{{ user_home }}/dotfiles"
+  shell: |
+    stow {{ item.name | basename }}
+  changed_when: false
