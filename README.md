@@ -54,9 +54,17 @@ git remote set-url origin git@github.com:willothewispx/ansible-mac.git
 - System Preferences > Keyboard > Keyboard Shortcuts > Modifier Keys > Remap
 
 ## Misc
+
+### Fonts
 - Search available nerd fonts 
 ```
 brew search '/font-.*-nerd-font/'
+```
+
+### kitty terminal
+- debug fonts
+```
+kitty --debug-font-fallback
 ```
 
 
