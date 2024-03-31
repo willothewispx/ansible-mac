@@ -1,28 +1,29 @@
 # Brewfile
 
-brew "mas"
-brew "dockutil"
-brew "ansible"
 # brew "ansible-lint"
-# brew "eza"
 # brew "ffmpeg"
-brew "fzf"
-brew "git"
 # brew "go"
 # brew "node"
 # brew "nvm"
-brew "nvim"
 # brew "pnpm"
 # brew "python"
 # brew "ripgrep"
-brew "starship"
-brew "stow"
-# brew "tmux"
 # brew "wget"
 # brew "yamllint"
 # brew "yarn"
 # brew "youtube-dl"
-# brew "zoxide"
+brew "ansible"
+brew "antidote"
+brew "dockutil"
+brew "eza"
+brew "fzf"
+brew "git"
+brew "mas"
+brew "nvim"
+brew "starship"
+brew "stow"
+brew "tmux"
+brew "zoxide"
 
 
 #############
@@ -30,7 +31,6 @@ brew "stow"
 #############
 
 tap "homebrew/cask-fonts"
-
 
 #############
 ### Casks ###
@@ -68,7 +68,7 @@ cask "appcleaner"
 # cask "docker"
 
 # window
-# cask "alt-tab"
+cask "alt-tab"
 
 # vpn
 # cask "mullvadvpn"
