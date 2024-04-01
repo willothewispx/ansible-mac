@@ -3,7 +3,7 @@
 EXTRA_TAGS=""
 
 for tag in "$@"; do
-    EXTRA_TAGS+="$tag "
+    EXTRA_TAGS+="$tag,"
 done
 
 if [ -n "$EXTRA_TAGS" ]; then
