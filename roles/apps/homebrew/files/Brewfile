@@ -2,7 +2,6 @@
 
 # brew "ansible-lint"
 # brew "ffmpeg"
-# brew "go"
 # brew "node"
 # brew "nvm"
 # brew "pnpm"
@@ -18,6 +17,7 @@ brew "dockutil"
 brew "eza"
 brew "fzf"
 brew "git"
+brew "go"
 brew "mas"
 brew "nvim"
 brew "starship"
@@ -65,7 +65,7 @@ cask "fantastical"
 cask "appcleaner"
 
 # docker
-# cask "docker"
+cask "docker"
 
 # window
 cask "alt-tab"
