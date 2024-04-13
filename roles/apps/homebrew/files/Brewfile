@@ -69,6 +69,7 @@ cask "docker"
 
 # window
 cask "alt-tab"
+cask "rectangle"
 
 # vpn
 # cask "mullvadvpn"
