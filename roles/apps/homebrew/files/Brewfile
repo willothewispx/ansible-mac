@@ -18,6 +18,7 @@ brew "eza"
 brew "fzf"
 brew "git"
 brew "go"
+brew "go-task"
 brew "mas"
 brew "nvim"
 brew "starship"
@@ -38,6 +39,7 @@ tap "homebrew/cask-fonts"
 
 # code
 cask "visual-studio-code"
+cask "zed"
 
 # terminal
 cask "kitty"
