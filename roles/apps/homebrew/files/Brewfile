@@ -77,7 +77,7 @@ cask "rectangle"
 # cask "mullvadvpn"
 
 # bookmark
-# cask "raindropio"
+cask "raindropio"
 
 # file
 # cask "dropzone"
