@@ -32,7 +32,6 @@ brew "zoxide"
 ### Taps  ###
 #############
 
-tap "homebrew/cask-fonts"
 
 #############
 ### Casks ###
