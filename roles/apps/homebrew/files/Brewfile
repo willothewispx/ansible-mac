@@ -38,11 +38,14 @@ brew "zoxide"
 #############
 
 # code
+cask "cursor"
 cask "visual-studio-code"
 cask "zed"
 
 # terminal
 cask "kitty"
+cask "iterm2"
+cask "ghostty"
 
 # browser
 cask "brave-browser"
@@ -69,10 +72,6 @@ cask "appcleaner"
 # docker
 cask "docker"
 
-# window
-cask "alt-tab"
-cask "rectangle"
-
 # vpn
 # cask "mullvadvpn"
 
@@ -98,3 +97,6 @@ cask "font-symbols-only-nerd-font"
 
 # notes
 cask "obsidian"
+
+# window manager
+cask "nikitabobko/tap/aerospace"

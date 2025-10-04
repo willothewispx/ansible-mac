@@ -50,6 +50,7 @@
     group: "{{ homebrew_group }}"
     recurse: true
   become: true
+  ignore_errors: yes
 
 # Place brew binary in proper location and complete setup.
 - name: Check if homebrew binary is already in place.

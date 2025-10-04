@@ -67,6 +67,14 @@ brew search '/font-.*-nerd-font/'
 kitty --debug-font-fallback
 ```
 
+# disable font smoothing https://www.fontsmoothingadjuster.com/
+```
+defaults -currentHost write -g AppleFontSmoothing -int 0
+```
+Reset to default with
+```
+defaults -currentHost delete -g AppleFontSmoothing
+```
 
 ## ToDos
 - Add ansible lint action to github
