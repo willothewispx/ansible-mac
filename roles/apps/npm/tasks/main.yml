@@ -1,0 +1,16 @@
+---
+- name: Ensure configured global npm packages are installed.
+  community.general.npm:
+    name: "{{ item }}"
+    global: true
+    state: present
+  loop: "{{ npm_global_packages }}"
+
+- name: Ensure npm packages are up to date
+  when: npm_global_packages_update | bool
+  community.general.npm:
+    name: "{{ item }}"
+    global: true
+    state: latest
+  loop: "{{ npm_global_packages }}"
+

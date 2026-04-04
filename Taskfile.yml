@@ -1,0 +1,79 @@
+version: "3"
+
+vars:
+  PLAYBOOK: main.yml
+
+tasks:
+  default:
+    desc: List available tasks
+    cmds:
+      - task --list
+
+  provision:
+    desc: Run the Ansible playbook, optionally with TAGS=tag1,tag2
+    cmds:
+      - ansible-playbook {{.PLAYBOOK}} --ask-become-pass {{if .TAGS}}--tags {{.TAGS}} {{end}}{{.CLI_ARGS}}
+
+  provision:homebrew:
+    desc: Run only the homebrew role
+    cmds:
+      - task: provision
+        vars:
+          TAGS: homebrew
+
+  provision:npm:
+    desc: Run only the npm role
+    cmds:
+      - task: provision
+        vars:
+          TAGS: npm
+
+  provision:npm:update:
+    desc: Run the npm role and upgrade global packages to latest
+    cmds:
+      - task: provision
+        vars:
+          TAGS: npm
+          CLI_ARGS: -e npm_global_packages_update=true
+
+  provision:mas:
+    desc: Run only the mas role
+    cmds:
+      - task: provision
+        vars:
+          TAGS: mas
+
+  provision:dock:
+    desc: Run only the dock role
+    cmds:
+      - task: provision
+        vars:
+          TAGS: dock
+
+  provision:git:
+    desc: Run only the git role
+    cmds:
+      - task: provision
+        vars:
+          TAGS: git
+
+  provision:ssh:
+    desc: Run only the ssh role
+    cmds:
+      - task: provision
+        vars:
+          TAGS: ssh
+
+  provision:mac:
+    desc: Run only the mac role
+    cmds:
+      - task: provision
+        vars:
+          TAGS: mac
+
+  provision:dotfiles:
+    desc: Run only the dotfiles role
+    cmds:
+      - task: provision
+        vars:
+          TAGS: dotfiles

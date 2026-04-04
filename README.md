@@ -25,6 +25,13 @@ python3 -m pip install --user ansible
 ansible-galaxy install -r requirements.yml
 ```
 
+#### 6. Run provisioning
+```
+task provision
+task provision:npm
+task provision TAGS=homebrew,npm
+```
+
 #### Change git remote url
 ```
 git remote set-url origin git@github.com:willothewispx/ansible-mac.git

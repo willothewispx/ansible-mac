@@ -11,6 +11,10 @@
       tags:
         - homebrew
         - apps
+    - role: apps/npm
+      tags:
+        - npm
+        - apps
     - role: apps/mas
       tags:
         - mas
