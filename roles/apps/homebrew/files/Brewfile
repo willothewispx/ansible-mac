@@ -1,15 +1,5 @@
 # Brewfile
 
-# brew "ansible-lint"
-# brew "ffmpeg"
-# brew "node"
-# brew "nvm"
-# brew "pnpm"
-# brew "python"
-# brew "ripgrep"
-# brew "wget"
-# brew "yamllint"
-# brew "yarn"
 brew "ansible"
 brew "antidote"
 brew "dockutil"
@@ -19,13 +9,23 @@ brew "fzf"
 brew "git"
 brew "go"
 brew "go-task"
-brew "mas"
+brew "mas" # Mac App Store command-line interface
+brew "mole" # Deep clean and optimize your Mac
 brew "nvim"
+brew "node"
+brew "ripgrep"
 brew "starship"
 brew "stow"
 brew "tmux"
+brew "tree-sitter"
 brew "yt-dlp"
 brew "zoxide"
+
+
+#############
+### LSPs  ###
+#############
+brew "lua-language-server"
 
 
 #############
@@ -38,13 +38,13 @@ brew "zoxide"
 #############
 
 # code
-cask "cursor"
-cask "visual-studio-code"
-cask "zed"
+# cask "cursor"
+# cask "visual-studio-code"
+# cask "zed"
 
 # terminal
-cask "kitty"
-cask "iterm2"
+# cask "kitty"
+# cask "iterm2"
 cask "ghostty"
 
 # browser
@@ -90,6 +90,8 @@ cask "pdf-expert"
 
 # fonts
 cask "font-monaspace"
+cask "font-monaspace-nf"
+cask "font-monaspace-var"
 cask "font-symbols-only-nerd-font"
 
 # api
