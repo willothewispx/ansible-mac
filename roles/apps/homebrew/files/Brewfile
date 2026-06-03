@@ -9,10 +9,12 @@ brew "fzf"
 brew "git"
 brew "go"
 brew "go-task"
+brew "infisical/get-cli/infisical"
+brew "lazygit"
 brew "mas" # Mac App Store command-line interface
 brew "mole" # Deep clean and optimize your Mac
-brew "nvim"
 brew "node"
+brew "nvim"
 brew "ripgrep"
 brew "starship"
 brew "stow"
