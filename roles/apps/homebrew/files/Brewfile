@@ -4,15 +4,16 @@ brew "ansible"
 brew "antidote"
 brew "dockutil"
 brew "eza"
-brew "fabric-ai"
 brew "ffmpeg"
 brew "fzf"
 brew "git"
 brew "git-delta"
 brew "go"
 brew "go-task"
+brew "gh"
 brew "infisical/get-cli/infisical"
 brew "lazygit"
+brew "luajit"
 brew "mas" # Mac App Store command-line interface
 brew "mole" # Deep clean and optimize your Mac
 brew "node"
@@ -30,6 +31,8 @@ brew "zoxide"
 ### LSPs  ###
 #############
 brew "lua-language-server"
+brew "texlab"
+brew "latexindent"
 
 
 #############
