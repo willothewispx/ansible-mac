@@ -28,11 +28,9 @@ brew "yt-dlp"
 brew "zoxide"
 
 
-#############
-### LSPs  ###
-#############
-brew "lua-language-server"
-brew "texlab"
+##################
+### Formatters  ###
+##################
 brew "latexindent"
 
 

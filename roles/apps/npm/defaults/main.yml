@@ -4,6 +4,3 @@ npm_global_packages_update: false
 
 npm_global_packages:
   - "@mistweaverco/kulala-fmt"
-  - "@mistweaverco/kulala-ls"
-  - "dockerfile-language-server-nodejs"
-  - "vscode-langservers-extracted"
