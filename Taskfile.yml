@@ -1,79 +1,47 @@
 version: "3"
 
-vars:
-  PLAYBOOK: main.yml
-
 tasks:
   default:
     desc: List available tasks
     cmds:
       - task --list
 
-  provision:
-    desc: Run the Ansible playbook, optionally with TAGS=tag1,tag2
+  bootstrap:
+    desc: Run the full bootstrap (or STEPS="brewfile mas")
     cmds:
-      - ansible-playbook {{.PLAYBOOK}} --ask-become-pass {{if .TAGS}}--tags {{.TAGS}} {{end}}{{.CLI_ARGS}}
+      - ./bootstrap.sh {{.STEPS}}
 
-  provision:homebrew:
-    desc: Run only the homebrew role
+  bootstrap:homebrew:
+    desc: Install Homebrew
     cmds:
-      - task: provision
-        vars:
-          TAGS: homebrew
+      - ./bootstrap.sh homebrew
 
-  provision:npm:
-    desc: Run only the npm role
+  bootstrap:brewfile:
+    desc: Install everything in the Brewfile
     cmds:
-      - task: provision
-        vars:
-          TAGS: npm
+      - ./bootstrap.sh brewfile
 
-  provision:npm:update:
-    desc: Run the npm role and upgrade global packages to latest
+  bootstrap:mas:
+    desc: Install/remove Mac App Store apps
     cmds:
-      - task: provision
-        vars:
-          TAGS: npm
-          CLI_ARGS: -e npm_global_packages_update=true
+      - ./bootstrap.sh mas
 
-  provision:mas:
-    desc: Run only the mas role
+  bootstrap:git:
+    desc: Set the global git identity
     cmds:
-      - task: provision
-        vars:
-          TAGS: mas
+      - ./bootstrap.sh git
 
-  provision:dock:
-    desc: Run only the dock role
+  bootstrap:macos:
+    desc: Apply macOS defaults and the key remap LaunchAgent
     cmds:
-      - task: provision
-        vars:
-          TAGS: dock
+      - ./bootstrap.sh macos
 
-  provision:git:
-    desc: Run only the git role
+  bootstrap:dotfiles:
+    desc: Clone dotfiles and stow them
     cmds:
-      - task: provision
-        vars:
-          TAGS: git
+      - ./bootstrap.sh dotfiles
 
-  provision:ssh:
-    desc: Run only the ssh role
+  bootstrap:hooks:
+    desc: Enable the secret-scan pre-commit hook for this repo
     cmds:
-      - task: provision
-        vars:
-          TAGS: ssh
-
-  provision:mac:
-    desc: Run only the mac role
-    cmds:
-      - task: provision
-        vars:
-          TAGS: mac
-
-  provision:dotfiles:
-    desc: Run only the dotfiles role
-    cmds:
-      - task: provision
-        vars:
-          TAGS: dotfiles
+      - ./bootstrap.sh hooks

@@ -1,20 +1,20 @@
 # Brewfile
 
-brew "ansible"
 brew "antidote"
+brew "can1357/tap/omp" # Oh My Pi coding agent CLI
 brew "dockutil"
 brew "eza"
 brew "ffmpeg"
 brew "fzf"
 brew "git"
 brew "git-delta"
+brew "gitleaks" # secret scanner, used by .githooks/pre-commit
 brew "go"
 brew "go-task"
 brew "gh"
 brew "herdr"
 brew "infisical/get-cli/infisical"
 brew "lazygit"
-brew "luajit"
 brew "mas" # Mac App Store command-line interface
 brew "mole" # Deep clean and optimize your Mac
 brew "node"
@@ -24,6 +24,7 @@ brew "starship"
 brew "stow"
 brew "tmux"
 brew "tree-sitter"
+brew "tuios" # Terminal window manager / multiplexer
 brew "yt-dlp"
 brew "zoxide"
 
@@ -75,8 +76,8 @@ cask "fantastical"
 # cask "hiddenbar"
 cask "appcleaner"
 
-# docker
-cask "docker"
+# docker-desktop
+cask "docker-desktop"
 
 # vpn
 # cask "mullvadvpn"

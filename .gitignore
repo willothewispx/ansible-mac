@@ -1,2 +1,9 @@
 vault.yml
 .vault_pass
+.DS_Store
+*.env
+.env*
+*.pem
+*.key
+id_*
+vault*

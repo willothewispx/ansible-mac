@@ -1,6 +1,0 @@
----
-# Set true (e.g. task provision:npm:update) to upgrade globals to latest; otherwise only ensure present.
-npm_global_packages_update: false
-
-npm_global_packages:
-  - "@mistweaverco/kulala-fmt"

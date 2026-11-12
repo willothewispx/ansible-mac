@@ -1,41 +1,15 @@
 # ansible-mac
-ansible playbook for provisioning a mac
+Idempotent bootstrap for provisioning a mac.
 
-## Steps
-
-#### 1. export $PATH
+## Bootstrap
 ```
-export PATH="$HOME/Library/Python/3.9/bin:/opt/homebrew/bin:$PATH"
-````
-
-#### 2. install ansible
+./bootstrap.sh                # everything
+./bootstrap.sh brewfile mas   # only some steps
+task bootstrap:macos          # same via Taskfile
+GIT_USER_NAME="..." GIT_USER_EMAIL="..." ./bootstrap.sh git
 ```
-python3 -m pip install --upgrade pip
-python3 -m pip install --user ansible
-````
-
-#### 3. Clone the repository
-
-#### 4. Place vault file and password file at the root directory
-- vault.yml
-- .vault_pass
-
-#### 5. Install ansible requirements
-```
-ansible-galaxy install -r requirements.yml
-```
-
-#### 6. Run provisioning
-```
-task provision
-task provision:npm
-task provision TAGS=homebrew,npm
-```
-
-#### Change git remote url
-```
-git remote set-url origin git@github.com:willothewispx/ansible-mac.git
-```
+Steps: homebrew, brewfile, mas, git, macos, dotfiles, hooks.
+No secrets are stored in this repo. `./bootstrap.sh hooks` enables a gitleaks pre-commit scan.
 
 ## Apps
 
@@ -84,4 +58,3 @@ defaults -currentHost delete -g AppleFontSmoothing
 ```
 
 ## ToDos
-- Add ansible lint action to github
